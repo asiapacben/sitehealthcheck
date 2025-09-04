@@ -25,6 +25,15 @@ A comprehensive tool for analyzing websites for both traditional Search Engine O
 - React Query for state management
 - Recharts for data visualization
 
+## 🚀 Quick Deploy
+
+### One-Click Deployments
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/asiapacben/sitehealthcheck)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/asiapacben/sitehealthcheck)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/asiapacben/sitehealthcheck)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/asiapacben/sitehealthcheck)
+
 ## Getting Started
 
 ### Prerequisites
@@ -35,8 +44,8 @@ A comprehensive tool for analyzing websites for both traditional Search Engine O
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
-cd seo-geo-health-checker
+git clone https://github.com/asiapacben/sitehealthcheck.git
+cd sitehealthcheck
 ```
 
 2. Install dependencies for all packages
@@ -48,6 +57,17 @@ npm run install:all
 ```bash
 cp backend/.env.example backend/.env
 # Edit backend/.env with your configuration
+```
+
+### Docker Deployment
+
+```bash
+# Quick start with Docker Compose
+docker-compose up -d
+
+# Or build and run individually
+docker build -t seo-geo-app .
+docker run -p 3001:3001 seo-geo-app
 ```
 
 ### Development
@@ -122,6 +142,35 @@ The tool supports various configuration options:
 - GEO analysis parameters
 - External API keys (Google PageSpeed Insights, etc.)
 - Rate limiting and security settings
+
+## Deployment
+
+### Platform Options
+
+| Platform | Frontend | Backend | Database | Cost |
+|----------|----------|---------|----------|------|
+| **Vercel** | ✅ Static | ✅ Serverless | ❌ | Free tier available |
+| **Netlify + Railway** | ✅ Static | ✅ Container | ✅ PostgreSQL | Free tier available |
+| **Railway** | ✅ Static | ✅ Container | ✅ PostgreSQL | $5/month |
+| **Render** | ✅ Static | ✅ Container | ✅ PostgreSQL | Free tier available |
+| **Docker** | ✅ Container | ✅ Container | ✅ Any | Self-hosted |
+
+### Environment Variables
+
+**Backend:**
+```env
+NODE_ENV=production
+PORT=3001
+GOOGLE_PAGESPEED_API_KEY=your_api_key
+CORS_ORIGIN=https://your-frontend-domain.com
+```
+
+**Frontend:**
+```env
+REACT_APP_API_URL=https://your-backend-domain.com
+```
+
+For detailed deployment instructions, see [DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md)
 
 ## Contributing
 
