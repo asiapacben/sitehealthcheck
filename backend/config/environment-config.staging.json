@@ -1,0 +1,11 @@
+{
+  "environment": "staging",
+  "logLevel": "info",
+  "enableMetrics": true,
+  "enableCaching": true,
+  "cacheTimeout": 600,
+  "maxConcurrentAnalyses": 5,
+  "analysisTimeout": 45000,
+  "retryAttempts": 3,
+  "retryDelay": 2000
+}

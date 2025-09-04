@@ -1,0 +1,7 @@
+{
+  "enableExperimentalGEO": false,
+  "enableAdvancedStructuredData": true,
+  "enableAIContentAnalysis": true,
+  "enablePerformanceOptimizations": true,
+  "enableBetaRecommendations": false
+}

@@ -1,0 +1,11 @@
+{
+  "environment": "development",
+  "logLevel": "debug",
+  "enableMetrics": true,
+  "enableCaching": false,
+  "cacheTimeout": 300,
+  "maxConcurrentAnalyses": 2,
+  "analysisTimeout": 60000,
+  "retryAttempts": 2,
+  "retryDelay": 1000
+}

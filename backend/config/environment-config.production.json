@@ -1,0 +1,11 @@
+{
+  "environment": "production",
+  "logLevel": "warn",
+  "enableMetrics": true,
+  "enableCaching": true,
+  "cacheTimeout": 1800,
+  "maxConcurrentAnalyses": 10,
+  "analysisTimeout": 30000,
+  "retryAttempts": 3,
+  "retryDelay": 5000
+}

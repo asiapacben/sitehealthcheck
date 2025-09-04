@@ -1,0 +1,35 @@
+{
+  "name": "seo-geo-health-checker",
+  "version": "1.0.0",
+  "description": "Comprehensive SEO & GEO health checker with end-to-end testing suite",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build:all": "cd backend && npm run build && cd ../frontend && npm run build",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "test:unit": "cd backend && npm test && cd ../frontend && npm test -- --watchAll=false",
+    "test:e2e": "./scripts/run-e2e-tests.sh",
+    "test:all": "npm run test:unit && npm run test:e2e",
+    "lint:all": "cd backend && npm run lint && cd ../frontend && npm run lint",
+    "clean": "rm -rf backend/dist backend/node_modules frontend/build frontend/node_modules node_modules coverage"
+  },
+  "keywords": [
+    "seo",
+    "geo",
+    "analysis",
+    "health-check",
+    "testing",
+    "e2e"
+  ],
+  "author": "SEO GEO Health Checker Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
